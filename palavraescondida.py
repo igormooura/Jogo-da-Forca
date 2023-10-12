@@ -6,7 +6,7 @@ letra_digitada = []
 letra_errada = []
 
 while True: 
-    letra = (input("Digite aqui uma possível letra: "))
+    letra = (input("Digite aqui uma possível letra: ")).lower()
 
     if len(letra) > 1:
         print("Digite apenas uma letra")
