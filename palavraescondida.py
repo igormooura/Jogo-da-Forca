@@ -1,9 +1,10 @@
 import os 
-palavra_escondida = 'professor'
+palavra_escondida = 'Couveflor'
 letra_correta = []
 tentativas_erradas = 0
 letra_digitada = []
 letra_errada = []
+
 
 while True: 
     letra = (input("Digite aqui uma possível letra: ")).lower()
@@ -11,8 +12,10 @@ while True:
     if len(letra) > 1:
         print("Digite apenas uma letra")
         continue
+
+    palavra_escondida_minuscula = palavra_escondida.lower()
     
-    if letra in palavra_escondida:
+    if letra in palavra_escondida_minuscula:
         if letra in letra_correta:
             print("Você já digitou essa letra")
         else:
@@ -30,7 +33,7 @@ while True:
 
     palavra_formada = ''
     for letra_secreta in palavra_escondida:
-        if letra_secreta in letra_correta :
+        if letra_secreta.lower() in letra_correta :
             palavra_formada += letra_secreta
         else:
             palavra_formada += "*"
