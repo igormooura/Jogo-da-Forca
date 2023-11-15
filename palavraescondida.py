@@ -1,5 +1,7 @@
-import os 
-palavra_escondida = 'Couveflor'
+import random
+with open('palavras.txt', 'r') as file:
+    possiveis_palavras = [word.strip() for word in file.readlines()]
+palavra_escondida = random.choice(possiveis_palavras)
 letra_correta = []
 tentativas_erradas = 0
 letra_digitada = []
@@ -41,7 +43,7 @@ while True:
     print(palavra_formada)
 
     if tentativas_erradas == 5:
-        print("Você não conseguiu!")
+        print(f"Você não conseguiu! A palavra era {palavra_escondida}")
         break
     
     if palavra_formada == palavra_escondida:
