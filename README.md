@@ -5,6 +5,7 @@ O jogo da forca é uma atividade popular que envolve a adivinhação de palavras
 ## Funcionamento
 
 O jogador terá que inserir uma letra de cada vez para tentar adivinhar a palavra oculta, que é escolhida aleatoriamente do arquivo "palavras.txt".
+
 A cada letra digitada, o jogo determinará se ela é presente dentro da palavra misteriosa, a cada letra errada, uma parte do corpo da forca aparece e se o jogador errar 5 vezes, ele perde.
 
 
