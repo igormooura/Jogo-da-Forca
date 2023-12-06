@@ -118,5 +118,5 @@ while True:
         break
     
     if palavra_formada == palavra_escondida:
-        print(f"Parabéns! A palavra era {palavra_escondida}")
+        print(f"Parabéns!")
         break
